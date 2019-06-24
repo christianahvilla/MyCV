@@ -45,7 +45,7 @@ class Education(
     @SerializedName("Name") var name: String,
     @SerializedName("Grade") var grade: String,
     @SerializedName("Career") var career: String,
-    @SerializedName("LinkedIn") var period: String
+    @SerializedName("Period") var period: String
 )
 
 data class WorkExperience (

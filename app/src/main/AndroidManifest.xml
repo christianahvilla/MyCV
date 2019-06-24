@@ -15,8 +15,20 @@
 			android:theme="@style/AppTheme"
 			tools:ignore="GoogleAppIndexingWarning">
 		<activity
+				android:name=".ui.activity.Freelance"
+				android:label="@string/title_activity_freeLanceExperience"
+				android:parentActivityName=".ui.activity.Home"
+				android:screenOrientation="portrait">
+		</activity>
+		<activity
+				android:name=".ui.activity.Work"
+				android:label="@string/title_activity_workExperience"
+				android:parentActivityName=".ui.activity.Home"
+				android:screenOrientation="portrait">
+		</activity>
+		<activity
 				android:name=".ui.activity.Education"
-		        android:label="@string/title_activity_education"
+				android:label="@string/title_activity_education"
 				android:parentActivityName=".ui.activity.Home"
 				android:screenOrientation="portrait">
 		</activity>

@@ -8,9 +8,11 @@ import com.werden.mycv.R
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.content_about_me.*
 import kotlinx.android.synthetic.main.content_education.*
+import kotlinx.android.synthetic.main.content_freelance_experience.*
 import kotlinx.android.synthetic.main.content_information.*
 import kotlinx.android.synthetic.main.content_skills.*
 import kotlinx.android.synthetic.main.content_soft_skills.*
+import kotlinx.android.synthetic.main.content_work_experience.*
 
 class Home : AppCompatActivity() {
 
@@ -38,6 +40,15 @@ class Home : AppCompatActivity() {
         education_card.setOnClickListener{
             startAnotherActivity(5)
         }
+
+        work_card.setOnClickListener{
+            startAnotherActivity(6)
+        }
+
+        free_card.setOnClickListener{
+            startAnotherActivity(7)
+        }
+
     }
 
 
@@ -59,6 +70,12 @@ class Home : AppCompatActivity() {
             }
             5 -> {
                 intent = Intent(this@Home, Education::class.java)
+            }
+            6 -> {
+                intent = Intent(this@Home, Work::class.java)
+            }
+            7 -> {
+                intent = Intent(this@Home, Freelance::class.java)
             }
         }
         intent.putExtra("resume", resume)

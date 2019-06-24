@@ -3,37 +3,47 @@ package com.werden.mycv.ui.activity
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.LinearLayoutManager
 import android.view.MenuItem
 import com.google.gson.Gson
 import com.werden.mycv.R
-import com.werden.mycv.common.CommonFunctions
+import com.werden.mycv.adapters.AdapterWork
 import com.werden.mycv.models.Resume
-import kotlinx.android.synthetic.main.activity_skills.*
-import kotlinx.android.synthetic.main.activity_soft_skills.*
+import com.werden.mycv.models.WorkExperience
+import kotlinx.android.synthetic.main.activity_work.*
 
-class Skills : AppCompatActivity() {
+class Work : AppCompatActivity() {
 
     private var resume: String = ""
+    private lateinit var works: ArrayList<WorkExperience>
+    private var adapter: AdapterWork? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_skills)
+        setContentView(R.layout.activity_work)
 
         resume = intent.getStringExtra("resume")
 
-        val skills: Resume = Gson().fromJson(resume, Resume::class.java)
+        val work: Resume = Gson().fromJson(resume, Resume::class.java)
 
-        skill_server.text = CommonFunctions().fillItems(skills.skills.serverConfiguration)
-        skill_languages.text = CommonFunctions().fillItems(skills.skills.languagesPrograming)
-        skill_databases.text = CommonFunctions().fillItems(skills.skills.dataBases)
+        works = work.workExperience
+
+        setRecycler()
 
     }
 
+    private fun setRecycler() {
+        val lim = LinearLayoutManager(this)
+        lim.orientation = LinearLayoutManager.VERTICAL
+        recyclerWork.layoutManager = lim
+        adapter = AdapterWork(works,this@Work)
+        recyclerWork.adapter = adapter
+    }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             android.R.id.home ->{
-                val intent = Intent(this@Skills, Home::class.java)
+                val intent = Intent(this@Work, Home::class.java)
                 intent.putExtra("resume", resume)
                 startActivity(intent)
                 finish()
@@ -44,7 +54,7 @@ class Skills : AppCompatActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        val intent = Intent(this@Skills, Home::class.java)
+        val intent = Intent(this@Work, Home::class.java)
         intent.putExtra("resume", resume)
         startActivity(intent)
         finish()

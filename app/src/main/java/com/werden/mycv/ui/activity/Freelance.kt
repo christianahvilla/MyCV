@@ -7,42 +7,43 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.MenuItem
 import com.google.gson.Gson
 import com.werden.mycv.R
-import com.werden.mycv.adapters.AdapterSchool
-import com.werden.mycv.models.Education
+import com.werden.mycv.adapters.AdapterFreelance
+import com.werden.mycv.models.FreeLanceExperience
 import com.werden.mycv.models.Resume
-import kotlinx.android.synthetic.main.activity_education.*
+import kotlinx.android.synthetic.main.activity_freelance.*
 
-class Education : AppCompatActivity() {
+class Freelance : AppCompatActivity() {
 
     private var resume: String = ""
-    private lateinit var schools: ArrayList<Education>
-    private var adapter: AdapterSchool? = null
+    private lateinit var freelnacers: ArrayList<FreeLanceExperience>
+    private var adapter: AdapterFreelance? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_education)
+        setContentView(R.layout.activity_freelance)
 
         resume = intent.getStringExtra("resume")
 
-        val education: Resume = Gson().fromJson(resume, Resume::class.java)
+        val freelance: Resume = Gson().fromJson(resume, Resume::class.java)
 
-        schools = education.education
+        freelnacers = freelance.freeLanceExperience
 
         setRecycler()
+
     }
 
     private fun setRecycler() {
         val lim = LinearLayoutManager(this)
         lim.orientation = LinearLayoutManager.VERTICAL
-        recyclerSchool.layoutManager = lim
-        adapter = AdapterSchool(schools,this@Education)
-        recyclerSchool.adapter = adapter
+        recyclerFreelance.layoutManager = lim
+        adapter = AdapterFreelance(freelnacers,this@Freelance)
+        recyclerFreelance.adapter = adapter
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             android.R.id.home ->{
-                val intent = Intent(this@Education, Home::class.java)
+                val intent = Intent(this@Freelance, Home::class.java)
                 intent.putExtra("resume", resume)
                 startActivity(intent)
                 finish()
@@ -53,7 +54,7 @@ class Education : AppCompatActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        val intent = Intent(this@Education, Home::class.java)
+        val intent = Intent(this@Freelance, Home::class.java)
         intent.putExtra("resume", resume)
         startActivity(intent)
         finish()
