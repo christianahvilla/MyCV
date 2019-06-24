@@ -21,6 +21,8 @@ class Information : AppCompatActivity() {
         resume = intent.getStringExtra("resume")
 
         setSupportActionBar(toolBar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true);
+        supportActionBar?.setDisplayShowHomeEnabled(true);
 
         adapter = ViewerPagerAdapter(supportFragmentManager, resume)
         view_pager.adapter = adapter
