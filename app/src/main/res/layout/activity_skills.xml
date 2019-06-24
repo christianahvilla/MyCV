@@ -1,52 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		xmlns:tools="http://schemas.android.com/tools"
 		xmlns:app="http://schemas.android.com/apk/res-auto"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:scrollbars="vertical"
-		android:orientation="vertical"
-		android:layout_margin="@dimen/activity_vertical_margin"
-		tools:context=".ui.activity.Skills">
+		android:background="@android:color/white"
+		android:scrollbars="vertical">
 
-	<TextView
+	<LinearLayout
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:textColor="@android:color/black"
-			android:textSize="@dimen/dimen_25sp"
-			android:text="@string/server_contiguration"/>
-	<TextView
-			android:id="@+id/skill_server"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:textColor="@android:color/darker_gray"
-			android:textSize="@dimen/dimen_20sp"
-			android:layout_marginBottom="@dimen/dimen_20sp"/>
-	<TextView
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:textColor="@android:color/black"
-			android:textSize="@dimen/dimen_25sp"
-			android:text="@string/languages"/>
-	<TextView
-			android:id="@+id/skill_languages"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:textColor="@android:color/darker_gray"
-			android:textSize="@dimen/dimen_20sp"
-			android:layout_marginBottom="@dimen/dimen_20sp"/>
-	<TextView
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:textColor="@android:color/black"
-			android:textSize="@dimen/dimen_25sp"
-			android:text="@string/databases"/>
-	<TextView
-			android:id="@+id/skill_databases"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:textColor="@android:color/darker_gray"
-			android:textSize="@dimen/dimen_20sp"/>
+			android:layout_height="match_parent"
+			android:scrollbars="vertical"
+			android:orientation="vertical"
+			android:layout_margin="@dimen/activity_vertical_margin"
+			android:background="@android:color/white"
+			tools:context=".ui.activity.Skills">
 
-</LinearLayout>
+		<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/dimen_16sp"
+				android:text="@string/server_contiguration"/>
+		<TextView
+				android:id="@+id/skill_server"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/darker_gray"
+				android:textSize="@dimen/dimen_14sp"
+				android:layout_marginBottom="@dimen/dimen_14sp"/>
+		<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/dimen_16sp"
+				android:text="@string/languages"/>
+		<TextView
+				android:id="@+id/skill_languages"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/darker_gray"
+				android:textSize="@dimen/dimen_14sp"
+				android:layout_marginBottom="@dimen/dimen_14sp"/>
+		<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/dimen_16sp"
+				android:text="@string/databases"/>
+		<TextView
+				android:id="@+id/skill_databases"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/darker_gray"
+				android:textSize="@dimen/dimen_14sp"/>
+
+	</LinearLayout>
+
+</ScrollView>

@@ -42,27 +42,27 @@
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_below="@id/work_company"
-						android:textSize="@dimen/dimen_12sp" />
+						android:textSize="@dimen/dimen_14sp" />
 
 				<TextView
 						android:id="@+id/work_period"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_below="@id/work_project"
-						android:textSize="@dimen/dimen_12sp" />
+						android:textSize="@dimen/dimen_14sp" />
 
 				<TextView
 						android:id="@+id/work_description"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_below="@id/work_period"
-						android:textSize="@dimen/dimen_12sp" />
+						android:textSize="@dimen/dimen_14sp" />
 				<TextView
 						android:id="@+id/work_activities"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_below="@id/work_description"
-						android:textSize="@dimen/dimen_12sp" />
+						android:textSize="@dimen/dimen_14sp" />
 
 
 			</RelativeLayout>

@@ -5,6 +5,7 @@
 		xmlns:app="http://schemas.android.com/apk/res-auto"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
+		android:background="@android:color/white"
 		tools:context=".ui.activity.AboutMe">
 
 	<ImageView
@@ -34,6 +35,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_margin="@dimen/dimen_40sp"
+			android:textSize="@dimen/dimen_14sp"
 			app:layout_constraintTop_toBottomOf="@+id/rounded_image_view"/>
 
 </android.support.constraint.ConstraintLayout>

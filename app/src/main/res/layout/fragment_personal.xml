@@ -16,40 +16,40 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:textColor="@android:color/black"
-				android:textSize="@dimen/dimen_25sp"
+				android:textSize="@dimen/dimen_16sp"
 				android:text="@string/name"/>
 		<TextView
 				android:id="@+id/personal_name"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:textColor="@android:color/darker_gray"
-				android:textSize="@dimen/dimen_20sp"
-				android:layout_marginBottom="@dimen/dimen_20sp"/>
+				android:textSize="@dimen/dimen_14sp"
+				android:layout_marginBottom="@dimen/dimen_14sp"/>
 		<TextView
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:textColor="@android:color/black"
-				android:textSize="@dimen/dimen_25sp"
+				android:textSize="@dimen/dimen_16sp"
 				android:text="@string/birthday"/>
 		<TextView
 				android:id="@+id/personal_birthday"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:textColor="@android:color/darker_gray"
-				android:textSize="@dimen/dimen_20sp"
-				android:layout_marginBottom="@dimen/dimen_20sp"/>
+				android:textSize="@dimen/dimen_14sp"
+				android:layout_marginBottom="@dimen/dimen_14sp"/>
 		<TextView
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:textColor="@android:color/black"
-				android:textSize="@dimen/dimen_25sp"
+				android:textSize="@dimen/dimen_16sp"
 				android:text="@string/nationality"/>
 		<TextView
 				android:id="@+id/personal_nationality"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:textColor="@android:color/darker_gray"
-				android:textSize="@dimen/dimen_20sp"/>
+				android:textSize="@dimen/dimen_14sp"/>
 	</LinearLayout>
 
 </FrameLayout>

@@ -42,21 +42,21 @@
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_below="@id/school_name"
-						android:textSize="@dimen/dimen_12sp" />
+						android:textSize="@dimen/dimen_14sp" />
 
 				<TextView
 						android:id="@+id/school_grade"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_below="@id/school_period"
-						android:textSize="@dimen/dimen_12sp" />
+						android:textSize="@dimen/dimen_14sp" />
 
 				<TextView
 						android:id="@+id/school_career"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_below="@id/school_grade"
-						android:textSize="@dimen/dimen_12sp" />
+						android:textSize="@dimen/dimen_14sp" />
 
 
 			</RelativeLayout>
