@@ -1,0 +1,31 @@
+<resources>
+	<string name="app_name">MyCV</string>
+	<string name="cv">
+		christianahvilla/601b37db6601536a3085fe21aeab2c19/raw/31f24b65e8bcb1fdcd6330269fc4228fa460872f/cahv
+	</string>
+	<string name="title_activity_home">Home</string>
+	<string name="title_activity_aboutMe">About Me</string>
+	<string name="title_activity_information">Information</string>
+	<string name="title_activity_softSkills">Soft Skills</string>
+	<string name="title_activity_skills">Skills</string>
+	<string name="title_activity_education">Education</string>
+	<string name="title_activity_workExperience">Work Experience</string>
+	<string name="title_activity_freeLanceExperience">Freelance Experience</string>
+	<string name="tab_text_1">Tab 1</string>
+	<string name="tab_text_2">Tab 2</string>
+
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="name">Name</string>
+	<string name="birthday">Birthday</string>
+	<string name="nationality">Nationality</string>
+	<string name="email">Email</string>
+	<string name="cellphone">Cellphone</string>
+	<string name="linkedin">LinkedIn</string>
+	<string name="teamwork">Teamwork</string>
+	<string name="continuous_learning">Continuous Learning</string>
+	<string name="open_minded">Open Minded</string>
+	<string name="databases">Databases</string>
+	<string name="languages">Languages</string>
+	<string name="server_contiguration">Server Configuration</string>
+</resources>

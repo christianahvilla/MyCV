@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/primaryTextColor"
+             tools:context=".ui.fragment.ContactFragment">
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:layout_margin="@dimen/activity_vertical_margin">>
+		<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/dimen_25sp"
+				android:text="@string/email"/>
+		<TextView
+				android:id="@+id/contact_email"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/darker_gray"
+				android:textSize="@dimen/dimen_20sp"
+				android:layout_marginBottom="@dimen/dimen_20sp"/>
+		<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/dimen_25sp"
+				android:text="@string/cellphone"/>
+		<TextView
+				android:id="@+id/contact_cellphone"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/darker_gray"
+				android:textSize="@dimen/dimen_20sp"
+				android:layout_marginBottom="@dimen/dimen_20sp"/>
+		<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/dimen_25sp"
+				android:text="@string/linkedin"/>
+		<TextView
+				android:id="@+id/contact_linkedin"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/darker_gray"
+				android:textSize="@dimen/dimen_20sp"/>
+	</LinearLayout>
+
+</FrameLayout>
