@@ -1,5 +1,5 @@
 # MyCV
-MyCV is an app display my resume.
+MyCV is an app to display my resume.
 
 ### Built With
 * [Kotlin](https://kotlinlang.org/) - Drastically reduce the amount of boilerplate code.
